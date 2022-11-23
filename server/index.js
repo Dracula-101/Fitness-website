@@ -42,3 +42,6 @@ app.listen(process.env.PORT || 5000, async () => {
     console.log(e);
   }
 });
+app.setTimeout(() => {
+  console.log("Server timeout");
+}, 5000);
