@@ -6,10 +6,12 @@ const mashupRoute = require("./routes/combineApi");
 const auth = require("./routes/user");
 const review =require("./routes/review")
 const mongoose = require("mongoose");
+
 dotenv.config();
 const corsOptions = {
   origin: "*", //can be access from any where(no PORT restriction)
 };
+// Changed
 
 //boiler plate - req,res options
 app.use(express.json({ limit: "30mb", extended: true }));
@@ -32,7 +34,7 @@ app.listen(process.env.PORT || 5000, async () => {
       },
       () => {
         console.log("Connected to db");
-        console.log(`Server running at port ${PORT}`);
+        // console.log(`Server running at port ${PORT}`);
       }
     );
   } catch (e) {
