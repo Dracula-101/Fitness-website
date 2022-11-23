@@ -28,16 +28,15 @@ app.listen(process.env.PORT || 5000, async () => {
   try {
     await mongoose.connect(
       //wating for moongose to connect
-      "mongodb+srv://pratik=Pratik@cluster0.titxygg.mongodb.net/test",
+      process.env.DATABASE_URL,
       {
         useNewUrlParser: true,
       },
       () => {
-        console.log("Connected to db");
+        console.log("Connected to mongodb");
         // console.log(`Server running at port ${PORT}`);
         // added sometyhing
         //mew
-        
       }
     );
   } catch (e) {
