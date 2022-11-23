@@ -1,6 +1,6 @@
 const assert = require("assert");
 // signup test
-const SERVER_API_URL = "http://localhost:8000/api";
+const SERVER_API_URL = "https://crossfit.herokuapp.com/api";
 
 // test("signup", async () => {
 //   const res = await fetch(`${SERVER_API_URL}/user/signup`, {
