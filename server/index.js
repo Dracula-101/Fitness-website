@@ -28,13 +28,15 @@ app.listen(process.env.PORT || 5000, async () => {
   try {
     await mongoose.connect(
       //wating for moongose to connect
-      process.env.DATABASE_URL.toString(),
+      "mongodb+srv://pratik=Pratik@cluster0.titxygg.mongodb.net/test",
       {
         useNewUrlParser: true,
       },
       () => {
         console.log("Connected to db");
         // console.log(`Server running at port ${PORT}`);
+        // added sometyhing
+        
       }
     );
   } catch (e) {
@@ -42,6 +44,4 @@ app.listen(process.env.PORT || 5000, async () => {
     console.log(e);
   }
 });
-app.setTimeout(() => {
-  console.log("Server timeout");
-}, 5000);
+
