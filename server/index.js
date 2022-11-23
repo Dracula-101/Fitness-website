@@ -36,6 +36,7 @@ app.listen(process.env.PORT || 5000, async () => {
         console.log("Connected to db");
         // console.log(`Server running at port ${PORT}`);
         // added sometyhing
+        //mew
         
       }
     );
