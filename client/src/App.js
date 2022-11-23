@@ -32,5 +32,4 @@ const App = () => {
     </Box>
   )
 }
-
 export default App;
