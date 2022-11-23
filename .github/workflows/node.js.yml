@@ -18,6 +18,8 @@ jobs:
       - name: Install necessary packages
         working-directory: ./client
         run: npm install --force
+      - name: Testing the project
+        run: npm run test
       - name: Build the project
         working-directory: ./client
         run: CI=false npm run build
