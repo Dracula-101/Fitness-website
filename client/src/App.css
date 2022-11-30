@@ -82,7 +82,7 @@ body {
 .exercise-card {
   width: 400px;
   height: 445px;
-  background: #fff;
+  background: #fff ;
   border-top: 4px solid var(--color-secondary);
   border-bottom-left-radius: 20px;
   text-decoration: none;
